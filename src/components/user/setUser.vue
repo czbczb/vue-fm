@@ -1,12 +1,12 @@
 <template>
-	<div class="fm_body">
-		<h1>{{msg}}</h1>
-	</div>
+  <div class="fm_Body">
+    <h1>{{msg}}</h1>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "setUser",
+  name: "SetUser",
   data() {
     return {
       msg: "设置用户"

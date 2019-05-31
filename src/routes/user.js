@@ -1,10 +1,11 @@
-const userList = () =>  import('@/components/user/userList.vue')
-const setUser = () => import('@/components/user/setUser.vue')
+const UserList = () => import('@/components/user/UserList.vue')
+const SetUser = () => import('@/components/user/SetUser.vue')
 
-export default[
+export default [
     {
         path: '/userList',
-        component: userList,
+        component: UserList,
+        name: 'UserList',
         meta: {
             title: '用户列表',
             keepAlive: true
@@ -12,11 +13,11 @@ export default[
     },
     {
         path: '/setUser',
-        component: setUser,
+        component: SetUser,
+        name: 'SetUser',
         meta: {
             title: '设置',
             keepAlive: true
         }
     }
-
 ]

@@ -1,20 +1,5 @@
-import Mock from 'mockjs'
-import BaseUrl from '../config/config'
-
-Mock.mock(`${BaseUrl}/getUserInfo`, {
-    'code': 200,
-    'data': {
-        'name': 'cuizongbao',
-        'age': 20,
-        'gengder': 'man'
-    },
-    'message': '操作成功',
-    'systemDate': new Date().getTime()
-});
-
-Mock.mock(`${BaseUrl}/getMenuList`, 'post', {
-    'code': 200,
-    'data': [
+{
+    "navigation":[
         {
             "title": "用户信息",
             "icon": "ios-people",
@@ -47,7 +32,5 @@ Mock.mock(`${BaseUrl}/getMenuList`, 'post', {
                 }
             ]
         }
-    ],
-    'message': '操作成功',
-    'systemDate': new Date().getTime()
-});
+    ]
+}

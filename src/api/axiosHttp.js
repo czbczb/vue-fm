@@ -37,7 +37,6 @@ function errorState(response) {
 
 // 封装数据返回成功提示函数---------------------------------------------------------------------------
 function successState(res) {
-    console.log(res);
     // 隐藏loading
     // 统一判断后端返回的错误码(错误码与后台协商而定)
     if (res.code == '200') {

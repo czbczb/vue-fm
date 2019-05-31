@@ -1,10 +1,11 @@
-const company = () => import('@/components/user/userList.vue')
-const setUser = () => import('@/components/user/setUser.vue')
+const Instruction = () => import('@/components/home/Instruction.vue')
+const Company = () => import('@/components/home/Company.vue')
 
 export default [
     {
         path: '/instruction',
-        component: setUser,
+        name: 'Instruction',
+        component: Instruction,
         meta: {
             title: '公司简介',
             keepAlive: true
@@ -12,7 +13,8 @@ export default [
     },
     {
         path: '/company',
-        component: company,
+        component: Company,
+        name: 'Company',
         meta: {
             title: '合伙人',
             keepAlive: true

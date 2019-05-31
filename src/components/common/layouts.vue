@@ -4,9 +4,14 @@
     <Header></Header>
     <div class="fm_main">
       <!-- 左侧菜单 -->
-      <Menu></Menu>
+      <Navigation></Navigation>
       <!-- 主体内容 -->
-      <Section></Section>
+      <section class="fm_content">
+        <!-- 面包屑 -->
+        <breadCrumb></breadCrumb>
+        <!-- 导航 -->
+        <router-view></router-view>
+      </section>
     </div>
     <!-- 尾部 -->
     <Footer></Footer>
@@ -14,19 +19,19 @@
 </template>
 
 <script>
-import Header from "./header";
-import Section from "./section";
-import Footer from "./footer";
-import Menu from "./menu";
+import Header from "./Header";
+import Footer from "./Footer";
+import Navigation from "./Navigation";
+import breadCrumb from "./BreadCrumb";
 
 export default {
-  name: "layout",
+  name: "Layout",
   components: {
     // * 注册menus组件，让其可以在template调用
     Header,
-    Section,
     Footer,
-    Menu
+    Navigation,
+    breadCrumb
   },
 
   data() {
@@ -43,27 +48,27 @@ export default {
   flex-direction: column;
   .fm_header {
     height: 50px;
-    background-color: #333;
+    background-color: rgb(196, 192, 192);
   }
   .fm_footer {
     height: 50px;
-    background-color: #333;
+    background-color: rgb(196, 192, 192);
   }
   .fm_main {
     flex: 1;
     min-height: calc(100vh - 100px);
     display: flex;
-    background-color: #3d4164;
+    background-color: #a5a9cf;
     .fm_menu {
-      flex: 0 0 200px;
+      flex: 0 0 240px;
       height: 100%;
-      width: 200px;
+      background: #515a6e;
       min-height: calc(100vh - 100px);
     }
     .fm_content {
       flex: 1;
       background-color: #f5f5f5;
-      min-height: calc(100vh - 100px);
+      min-height: calc(100vh - 100px - 50px);
     }
   }
 }

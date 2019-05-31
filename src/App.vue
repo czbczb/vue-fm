@@ -5,11 +5,8 @@
 </template>
 
 <script>
-import api from "./api/api";
 export default {
-  name: "App",
-  methods: {},
-  onLoad() {}
+  name: "App"
 };
 </script>
 

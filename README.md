@@ -3,6 +3,8 @@
 > A Vue.js project
 
 ## Build Setup
+# 工程所用到的技术
+iview vue-router vuex mockJs less axios
 
 ``` bash
 # install dependencies
