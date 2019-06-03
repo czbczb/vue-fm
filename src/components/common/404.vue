@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  name: "Footer",
+  name: "error",
   data() {
     return {
-      msg: 'footer'
+        msg: '404'
     }
   }
 };

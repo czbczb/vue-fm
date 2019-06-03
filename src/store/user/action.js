@@ -3,8 +3,8 @@ import api from '@/api/api'
 import types from './mutation_type'
 
 export default {
-    async getUserInfo({ commit }) {
-        let res = await api.userInfo.getUserInfo();
+    async getUserInfo({ commit},params) {
+        let res = await api.userInfo.getUserInfo(params);
         console.log(res);
         commit(types.UNSERINFO, res.data);
     }

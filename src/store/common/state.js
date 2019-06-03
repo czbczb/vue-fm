@@ -1,5 +1,5 @@
 const commonState = {
-    show: false,
+    menuList: [],
 }
 
 export default commonState
