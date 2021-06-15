@@ -4,16 +4,14 @@
 
 <script>
 export default {
-  name: "Footer",
-  data() {
+  name: 'Footer',
+  data () {
     return {
       msg: 'footer'
     }
   }
-};
+}
 </script>
 
 <style lang="less">
 </style>
-
-

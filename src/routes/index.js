@@ -1,23 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import layouts from './layouts'
-const error = () => import('@/components/common/404');
-const Login = () => import('@/components/common/Login');
 
-Vue.use(Router);
+Vue.use(Router)
 
 const routes = [
-    {
-        path: '/404',
-        name: 'error',
-        component: error
-    },
-    {
-        path: '/login',
-        name: 'Login',
-        component: Login
-    },
-    ...layouts
+  {
+    path: '/404',
+    name: 'error',
+    component: () => import('@/components/common/404')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/components/common/Login')
+  },
+  ...layouts
 ]
 
 export default new Router({mode: 'history', routes })

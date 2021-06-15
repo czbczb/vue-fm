@@ -8,10 +8,10 @@ import state from './mergeState'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-    mutations,
-    actions,
-    getters,
-    state
+  mutations,
+  actions,
+  getters,
+  state
 })
 
 export default store

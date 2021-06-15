@@ -1,6 +1,6 @@
 
-const UNSERINFO = "userInfo"
+const UNSERINFO = 'userInfo'
 
 export default {
-    UNSERINFO
+  UNSERINFO
 }

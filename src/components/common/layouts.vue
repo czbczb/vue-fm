@@ -19,13 +19,13 @@
 </template>
 
 <script>
-import Header from "./Header";
-import Footer from "./Footer";
-import Navigation from "./Navigation";
-import breadCrumb from "./BreadCrumb";
+import Header from './Header'
+import Footer from './Footer'
+import Navigation from './Navigation'
+import breadCrumb from './BreadCrumb'
 
 export default {
-  name: "Layout",
+  name: 'Layout',
   components: {
     // * 注册menus组件，让其可以在template调用
     Header,
@@ -34,12 +34,12 @@ export default {
     breadCrumb
   },
 
-  data() {
+  data () {
     return {
-      msg: "合作伙伴"
-    };
+      msg: '合作伙伴'
+    }
   }
-};
+}
 </script>
 <style lang="less">
 .fm_container {

@@ -1,5 +1,5 @@
 
-const MENULIST = "menuList"
+const MENULIST = 'menuList'
 export default {
-    MENULIST
+  MENULIST
 }

@@ -3,9 +3,9 @@ import api from '@/api/api'
 import types from './mutation_type'
 
 export default {
-    async getMenuList({ commit }, params) {
-        let res = await api.common.getMenuList(params);
-        let data = res.data;
-        commit(types.MENULIST, data);
-    }
+  async getMenuList ({ commit }, params) {
+    let res = await api.common.getMenuList(params)
+    let data = res.data
+    commit(types.MENULIST, data)
+  }
 }

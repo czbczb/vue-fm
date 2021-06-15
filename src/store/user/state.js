@@ -1,5 +1,5 @@
 const userState = {
-    userInfo: {},
+  userInfo: {}
 }
 
 export default userState

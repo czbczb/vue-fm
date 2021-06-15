@@ -137,13 +137,13 @@
 
 <script>
 export default {
-  name: "login",
-  data() {
+  name: 'login',
+  data () {
     return {
-      msg: "登录 注册"
-    };
+      msg: '登录 注册'
+    }
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -160,5 +160,3 @@ export default {
   color: #fa8341;
 }
 </style>
-
-

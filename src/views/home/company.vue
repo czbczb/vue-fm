@@ -1,17 +1,19 @@
 <template>
-    <div class="fm_footer">{{msg}}</div>
+<div class="fm_body">
+	<h1>{{msg}}</h1>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'error',
+  name: 'company',
   data () {
     return {
-      msg: '404'
+      msg: '合作伙伴'
     }
   }
 }
 </script>
 
-<style lang="less">
+<style scoped>
 </style>

@@ -1,6 +1,6 @@
-import types  from './mutation_type'
+import types from './mutation_type'
 
 const commonMutation = {
-    [types.MENULIST]: (state, data) => state[types.MENULIST] = data
+  [types.MENULIST]: (state, data) => state[types.MENULIST] = data
 }
 export default commonMutation

@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: "BreadCrumb",
-  data() {
+  name: 'BreadCrumb',
+  data () {
     return {
-      msg: "面包屑"
-    };
+      msg: '面包屑'
+    }
   }
-};
+}
 </script>
 
 <style lang="less">

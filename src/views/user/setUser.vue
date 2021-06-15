@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: "SetUser",
-  data() {
+  name: 'SetUser',
+  data () {
     return {
-      msg: "设置用户"
-    };
+      msg: '设置用户'
+    }
   }
-};
+}
 </script>
 
 <style scoped>
